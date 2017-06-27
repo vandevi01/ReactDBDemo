@@ -1,0 +1,45 @@
+This application is basically Manage Author
+
+We can add Author
+We can edit Author
+We can delete Author
+
+Also Search is implemented in it
+
+To execute this application
+please run cmd as admin
+
+set path in CMD to assginement folder
+ -->npm install
+ set path in CMD to server folde
+ --> npm install
+
+to run the server you have to perform below mentioned command
+
+node server.js
+
+to run the GUI you need to perform
+npm run gulp
+
+
+
+
+Cassandra :
+
+1. Install cassandra (> version 2.1 ) and run local instance in your machine. 
+2. Create data directories :
+   C:\var
+3. To run Cassandra :
+   A. Go to location C:\apache-cassandra-2.1.14\bin in  shell.
+   B. run the file cassandra.bat
+  
+4. To view data on Cassandra CQLSH :
+   A. A. Go to location C:\apache-cassandra-2.1.14\bin in  shell.
+   B. run the file cqlsh.bat
+   C. Select Keyspace : use author_management;
+   D. To view all the tables : describe tables;
+   E. Search queries will bi similar to SQL.
+
+
+ADD SECONDAY INDEX :
+create index idx on authors(firstname);
